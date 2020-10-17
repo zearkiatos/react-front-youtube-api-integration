@@ -4,6 +4,8 @@ FROM node:14-alpine
 RUN apk update && apk add python make g++
 RUN apk add --update nodejs npm
 
+WORKDIR /app
+
 COPY . ./
 
 RUN npm install --silent
