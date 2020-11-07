@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { YOUTUBE_API_KEY, YOUTUBE_API_URL_BASE } from '../../config/constants';
+const { YOUTUBE_API_URL_BASE, YOUTUBE_API_KEY } = require('../../config/constants');
 
 export default axios.create({
     baseURL: YOUTUBE_API_URL_BASE,
